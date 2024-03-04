@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <div id = "header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Aboue Me</a></li>
+                    <li><a href="#portfolio">My CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            
+
+            <div class="header-text">
+                <p>Software Development Engineer - Backend</p>
+                <h1>Hi, I'm <span>Shubham</span><br> </h1>
+                <p>Project Engineer @ CDAC, Mumbai, India</p>
+            </div>
+
+        </div>
+    </div>
+
+<!-- About  section -->
+    <div id="about">
+
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                </div>
+                <div class="about-col-2">
+                     <!-- adding images  to first column-->
+                     <!-- <img src="images/resume1.png" alt="resume"> -->
+                     <p>
+                        Experienced Agile practitioner with <strong style="color: #fff">2 years and 6 months</strong> of hands-on expertise in system design, SDLC, and Java-based applications. Demonstrated proficiency in software development, testing, and security, contributing significantly to diverse projects. Actively pursuing a Software Developer role to apply expertise in full-stack development, ensuring alignment with organizational growth objectives.
+                        <br><br><span id="pointers">Experienced Backend Developer:</span> Specializing in backend development, I leverage java with Spring Boot for backend Devlopment and proficient in multiple programming languages like <strong style="color: #fff">Java, C, C++, Python </strong> and scripting languages like <strong>shell scripting</strong>  to architect robust and scalable systems.
+                        <br> <span id="pointers">Efficiency and Optimization:</span> I focus on optimizing database performance using SQL and NoSQL databases like <strong style="color: #fff">PostgreSQL, Oracle, and Hbase</strong>. 
+                        <br> <span id="pointers">Continuous Learning and Adaptation:</span> Committed to staying ahead in the tech landscape, I keep myself updated with the latest development trends and best practices to deliver cutting-edge solutions.
+                        <br> <span id="pointers">Effective Communication and Collaboration:</span> With strong communication skills, I collaborate effectively with cross-functional teams, translating business requirements into technical solutions. I ensure seamless integration between frontend and backend components to deliver cohesive applications.
+
+
+                    </p>
+                    <div class="tab-titles ">
+                        <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- Skills -->
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>
+                                C (proficient) , C++ (Proficient) , core java , Java (Expert) , Python (proficient) , HTML/CSS (Proficient) , Shell
+                                Scripting (Proficient)
+                            </li>
+                            <li><span>Technical Skills</span><br>
+                                Data Structure and Algorithms (DSA) , Problem-Solving , Spring Boot, API, REST API , Spring Security , JWT, RESTful web services ,JPA
+                                , multithreading , Thymeleaf , RDBMS ( Relational database management system ) , Elasticsearch , Apache Storm, Tomcat , Distributed Systems , MYSQL ,
+                                NoSQL , Hbase , Git , GitHub , GitLab , Docker , CI/CD , Debugging , Microservices , Clean Code, Code Optimisation , Operating Systems, Object oriented
+                                programming, JSP, Automated Testing
+                            </li>
+                            <li><span>Soft Skills</span><br>
+                                Communication-Skill , Interpersonal-Skill , Innovative , Collaborative , critical thinking, decision-making , leadership skills, contributive, strong
+                                written and verbal communication
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="tab-contents" id ="experience">
+                        <ul>
+                            <li><pre><span>Project Engineer                                                                                              @ CDAC, Mumbai</span></pre><br>
+                                <span style="color: #fff">CodeBook Project:</span> Sper-heading the Backend Development of CodeBook project. Made significant contribution to the requirement elicitation.
+                            </li>
+                            <li><pre><span>Java Developer                                                                                                @ CDAC, Mumbai</span></pre><br>
+                                <span style="color: #fff">NCRB Project:</span> As a module lead of Crawler, I led my team to design, develop, test and deploy a very large scale Java based Crawler that could crawl upto 2 lakh urls per day.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="tab-contents " id ="education">
+                        <ul>
+                            <li> <pre><span>Bachelor of Technology                                                                                                      2016 - 2020 </span></pre> <br>
+                                Completed my B.Tech in Computer Science Engineering with aggregate score of <span style="color: #fff"> 81.2%</span> from Shri Shankaracharya Group of Institutions
+                            </li>
+                            <li><pre><span>CBSE Class 12 : Science                                                                                                              2015 </span></pre><br>
+                                Completed my Higher Secondary Education with <span style="color: #fff"> 75%</span> from SKPS hr sec school.
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<!-- Services  section  -->
+
+<!-- Portfolio Section -->
+<div id="portfolio">
+
+    <div class="container">
+        <h1 class = "sub-title"> My CV: </h1> 
+    </div>
+    <div class="about-col-2">
+        <img src="images/resume.png" alt="resume">
+    </div>
+
+</div>
+<br><br><br><br>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;&nbsp;shubhamofficial048@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;+91 79877 68191</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shubhamofficial048/">
+                        <i class="fab fa-linkedin-in"></i> <span>linkedin.com/in/shubhamofficial048/</span> </a>
+                </div>
+                <a href="images/Shubham_Resume_2024.pdf" download class="btn btn 2">Download CV</a>
+
+            </div>
+
+
+            <div class="contact-right">
+                <form action="" name = "submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2 btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="copyright">
+        <p>Copyright © Shubham_Singh. Made with <i class="fas fa-heart"></i> by Shubham Singh </p>
+    </div>
+
+
+
+
+
+</div>
+
+<script>
+
+    var  tablinks = document.getElementsByClassName("tab-links");
+    var  tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+
+</script>
+
+
+
+<!-- for mobile -->
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+
+</script>
+
+<!-- adding data to google sheets -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxmU4C2wGL_2mRaiukLyekMAKLKVqTU8k2rMhCLWkByRQP8ydnJIuGZBxvvmSbFBz9F/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
