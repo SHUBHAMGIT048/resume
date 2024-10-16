@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+      <script>
+        function calculateExperience() {
+            const startDate = new Date('2020-01-01'); // Replace with your actual start date
+            const currentDate = new Date();
+            
+            let years = currentDate.getFullYear() - startDate.getFullYear();
+            let months = currentDate.getMonth() - startDate.getMonth();
+
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            // Adjust for edge case when the current date is earlier in the month than the start date
+            if (currentDate.getDate() < startDate.getDate()) {
+                if (months === 0) {
+                    years--;
+                    months = 11;
+                } else {
+                    months--;
+                }
+            }
+
+            return { years, months };
+        }
+
+        window.onload = function() {
+            const experienceElement = document.getElementById('experience');
+            if (experienceElement) {
+                const { years, months } = calculateExperience();
+                experienceElement.textContent = `${years} year${years !== 1 ? 's' : ''} and ${months} month${months !== 1 ? 's' : ''}`;
+            }
+        };
+  </script>
+
+    
 </head>
 <body>
     <div id = "header">
@@ -47,7 +83,7 @@
                      <!-- adding images  to first column-->
                      <!-- <img src="images/resume1.png" alt="resume"> -->
                      <p>
-                        Experienced Agile practitioner with <strong style="color: #fff">2 years and 9 months</strong> of hands-on expertise in system design, SDLC, and Java-based applications. Demonstrated proficiency in software development, testing, and security, contributing significantly to diverse projects. Actively pursuing a Software Developer role to apply expertise in full-stack development, ensuring alignment with organizational growth objectives.
+                        Experienced Agile practitioner with <strong style="color: #fff"><span id="experience"></span></strong> of hands-on expertise in system design, SDLC, and Java-based applications. Demonstrated proficiency in software development, testing, and security, contributing significantly to diverse projects. Actively pursuing a Software Developer role to apply expertise in full-stack development, ensuring alignment with organizational growth objectives.
                         <br><br><span id="pointers">Experienced Backend Developer:</span> Specializing in backend development, I leverage java with Spring Boot for backend Devlopment and proficient in multiple programming languages like <strong style="color: #fff">Java, C, C++, Python </strong> and scripting languages like <strong>shell scripting</strong>  to architect robust and scalable systems.
                         <br> <span id="pointers">Efficiency and Optimization:</span> I focus on optimizing database performance using SQL and NoSQL databases like <strong style="color: #fff">PostgreSQL, Oracle, and Hbase</strong>. 
                         <br> <span id="pointers">Continuous Learning and Adaptation:</span> Committed to staying ahead in the tech landscape, I keep myself updated with the latest development trends and best practices to deliver cutting-edge solutions.
