@@ -35,7 +35,7 @@
         }
 
         window.onload = function() {
-            const experienceElement = document.getElementById('experienc');
+            const experienceElement = document.getElementById('experience');
             if (experienceElement) {
                 const { years, months } = calculateExperience();
                 experienceElement.textContent = `${years} year${years !== 1 ? 's' : ''} and ${months} month${months !== 1 ? 's' : ''}`;
