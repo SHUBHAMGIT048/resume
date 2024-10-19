@@ -35,7 +35,7 @@
         }
 
         window.onload = function() {
-            const experienceElement = document.getElementById('experience');
+            const experienceElement = document.getElementById('experienc');
             if (experienceElement) {
                 const { years, months } = calculateExperience();
                 experienceElement.textContent = `${years} year${years !== 1 ? 's' : ''} and ${months} month${months !== 1 ? 's' : ''}`;
@@ -93,7 +93,7 @@
                     </p>
                     <div class="tab-titles ">
                         <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick="opentab('experienc')">Experience</p>
                         <p class = "tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <!-- Skills -->
